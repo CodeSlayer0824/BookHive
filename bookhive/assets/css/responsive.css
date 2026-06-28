@@ -1,0 +1,126 @@
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .container {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    .book-detail-container {
+        flex-direction: column;
+    }
+    
+    .book-cover-large {
+        margin: 0 auto 30px;
+        flex: 0 0 auto;
+    }
+    
+    .reader-content {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+    }
+    
+    .pdf-viewer {
+        height: 80vh;
+    }
+    
+    .dashboard-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-wrap: wrap;
+    }
+    
+    .logo {
+        order: 1;
+    }
+    
+    .mobile-menu {
+        order: 2;
+        display: block;
+    }
+    
+    .nav-links {
+        order: 4;
+        width: 100%;
+        display: none;
+        margin-top: 15px;
+    }
+    
+    .nav-links ul {
+        flex-direction: column;
+    }
+    
+    .nav-links li {
+        margin: 5px 0;
+    }
+    
+    .search-bar {
+        order: 3;
+        width: 100%;
+        margin: 15px 0;
+    }
+    
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .book-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+    
+    .library-book {
+        flex-direction: column;
+    }
+    
+    .history-item {
+        flex-direction: column;
+    }
+    
+    .history-cover {
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .dashboard-stats {
+        grid-template-columns: 1fr;
+    }
+    
+    .book-card {
+        width: 100%;
+    }
+    
+    .status-filters {
+        flex-wrap: wrap;
+    }
+    
+    .auth-form {
+        padding: 20px;
+    }
+    
+    .reader-controls {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+    .page-controls, .zoom-controls {
+        width: 100%;
+        justify-content: center;
+    }
+}

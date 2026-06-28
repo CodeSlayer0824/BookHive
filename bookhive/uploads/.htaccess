@@ -1,0 +1,18 @@
+# Prevent directory listing
+Options -Indexes
+
+# Restrict access to all files by default
+Order deny,allow
+Deny from all
+
+# Allow access to specific file types
+<FilesMatch "\.(jpg|jpeg|png|gif|pdf)$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+# Prevent PHP execution
+<Files *.php>
+    Order deny,allow
+    Deny from all
+</Files>
